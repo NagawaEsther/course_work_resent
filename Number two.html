@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Square Numbers</title>
+</head>
+
+<body>
+  <h2>Square Numbers</h2>
+
+  <ul id="resultList"></ul>
+
+  <script>
+    function square(number) {
+      return number * number;
+    }
+
+    // Display the result for numbers 1 to 10
+    for (var i = 1; i <= 10; i++) {
+      var result = square(i);
+
+      // Create list item element
+      var listItem = document.createElement("li");
+      listItem.textContent = "Square of " + i + ": " + result;
+
+      // Append the list item to the unordered list
+      document.getElementById("resultList").appendChild(listItem);
+    }
+  </script>
+</body>
+
+</html>
